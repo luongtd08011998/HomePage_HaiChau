@@ -4,7 +4,7 @@ const IMAGE_URL = "/van-ban/thong-bao-hop-quy.jpg";
 
 export const metadata: Metadata = {
   title: "Thông báo hợp quy",
-  description: "Thông báo công bố hợp quy của Công ty TNHH Cấp nước Tóc Tiên.",
+  description: "Thông báo công bố hợp quy của Công ty TNHH - Tập đoàn Hải Châu Việt Nam.",
 };
 
 /**

@@ -3,7 +3,7 @@
  *
  * Tránh trỏ thẳng tới `http://127.0.0.1:8080` / `localhost` từ origin HTTPS public
  * (bị chặn bởi Private Network Access / loopback address space), đồng thời tự động
- * chuyển domain cũ `beta.toctienltd.vn` sang `toctienltd.vn` (hoặc đường dẫn tương đối).
+ * chuyển domain beta cũ sang `haichaugroup.vn` (hoặc đường dẫn tương đối).
  *
  * Quy ước: dùng path `/uploads/...` để Next/Nginx rewrite về backend (xem `next.config.ts`).
  */
@@ -30,15 +30,15 @@ export function publicMediaUrl(srcOrPath: string): string {
         return normalizeUploadsPath(`${u.pathname}${u.search}`);
       }
 
-      // Chuyển đổi các URL cũ từ beta.toctienltd.vn sang toctienltd.vn
-      if (host === "beta.toctienltd.vn") {
+      // Chuyển đổi các URL cũ từ beta sang domain chính thức
+      if (host === "beta.haichaugroup.vn" || host === "beta.toctienltd.vn") {
         if (
           u.pathname.startsWith("/uploads/") ||
           u.pathname.startsWith("/api/v1/uploads/")
         ) {
           return normalizeUploadsPath(`${u.pathname}${u.search}`);
         }
-        u.hostname = "toctienltd.vn";
+        u.hostname = "haichaugroup.vn";
         u.protocol = "https:";
         return u.toString();
       }
@@ -56,8 +56,8 @@ export function resolveThumb(thumbnail?: string | null): string {
   if (!thumbnail) return "/placeholder.svg";
   if (thumbnail.startsWith("http")) return publicMediaUrl(thumbnail);
   const mediaBase = (process.env.NEXT_PUBLIC_MEDIA_URL || "").replace(
-    /^https?:\/\/beta\.toctienltd\.vn/i,
-    "https://toctienltd.vn",
+    /^https?:\/\/beta\.(haichaugroup|toctienltd)\.vn/i,
+    "https://haichaugroup.vn",
   );
   return publicMediaUrl(mediaBase ? `${mediaBase}${thumbnail}` : thumbnail);
 }

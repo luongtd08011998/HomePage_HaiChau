@@ -74,7 +74,7 @@ export default function SmartDownloadClient({
             className="inline-flex items-center gap-2 text-xs sm:text-sm font-semibold text-slate-600 hover:text-[#0c2340] transition-colors"
           >
             <ArrowLeft className="h-4 w-4" />
-            <span>Về trang chủ Cấp Nước Tóc Tiên</span>
+            <span>Về trang chủ Tập đoàn Hải Châu Việt Nam</span>
           </Link>
 
           <div className="flex items-center gap-2 text-xs font-medium text-emerald-700 bg-emerald-50 px-3 py-1 rounded-full border border-emerald-200/60">
@@ -114,7 +114,7 @@ export default function SmartDownloadClient({
           <div className="lg:col-span-7 flex flex-col justify-center">
             <div className="inline-flex items-center gap-2 self-start rounded-full bg-[#0c2340] px-4 py-1.5 text-xs font-bold text-white shadow-xs">
               <Smartphone className="h-3.5 w-3.5 text-[#1cd0b4]" />
-              <span>Ứng dụng di động Cấp Nước Tóc Tiên</span>
+              <span>Ứng dụng di động Tập đoàn Hải Châu Việt Nam</span>
             </div>
 
             <h1 className="mt-4 text-2xl sm:text-4xl font-extrabold tracking-tight text-[#0c2340] leading-tight">
@@ -137,7 +137,7 @@ export default function SmartDownloadClient({
 
               <div className="mt-4 flex items-center gap-2 text-xs text-slate-500 pt-3 border-t border-slate-100">
                 <ShieldCheck className="h-4 w-4 text-emerald-600 shrink-0" />
-                <span>Phiên bản 1.4 chính thức phát hành bởi Cấp Nước Tóc Tiên — Miễn phí 100%</span>
+                <span>Phiên bản 1.4 chính thức phát hành bởi Tập đoàn Hải Châu Việt Nam — Miễn phí 100%</span>
               </div>
             </div>
 

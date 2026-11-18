@@ -48,7 +48,7 @@ export default function SmartQrCodeCard({
     if (canvas) {
       const url = canvas.toDataURL("image/png");
       const a = document.createElement("a");
-      a.download = "QR_Tai_App_Cap_Nuoc_Toc_Tien.png";
+      a.download = "QR_Tai_App_Hai_Chau.png";
       a.href = url;
       document.body.appendChild(a);
       a.click();
@@ -65,7 +65,7 @@ export default function SmartQrCodeCard({
       });
       const url = URL.createObjectURL(svgBlob);
       const a = document.createElement("a");
-      a.download = "QR_Tai_App_Cap_Nuoc_Toc_Tien.svg";
+      a.download = "QR_Tai_App_Hai_Chau.svg";
       a.href = url;
       document.body.appendChild(a);
       a.click();

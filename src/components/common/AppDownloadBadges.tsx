@@ -94,7 +94,7 @@ export default function AppDownloadBadges({
           href={appStoreUrl}
           target="_blank"
           rel="noopener noreferrer"
-          aria-label="Tải ứng dụng Cấp Nước Tóc Tiên trên App Store cho iOS"
+          aria-label="Tải ứng dụng Tập đoàn Hải Châu Việt Nam trên App Store cho iOS"
           className="group relative flex items-center gap-2 sm:gap-3 rounded-xl border border-white/20 bg-white/10 px-2.5 py-2 sm:px-3.5 sm:py-2.5 text-white backdrop-blur-md transition-all duration-300 hover:border-[#1cd0b4] hover:bg-white/15 hover:shadow-lg hover:shadow-[#1cd0b4]/10 hover:-translate-y-0.5 active:scale-95"
         >
           <div className="flex h-6 w-6 sm:h-7 sm:w-7 shrink-0 items-center justify-center transition-transform duration-300 group-hover:scale-110">
@@ -115,7 +115,7 @@ export default function AppDownloadBadges({
           href={googlePlayUrl}
           target="_blank"
           rel="noopener noreferrer"
-          aria-label="Tải ứng dụng Cấp Nước Tóc Tiên trên Google Play cho Android"
+          aria-label="Tải ứng dụng Tập đoàn Hải Châu Việt Nam trên Google Play cho Android"
           className="group relative flex items-center gap-2 sm:gap-3 rounded-xl border border-white/20 bg-white/10 px-2.5 py-2 sm:px-3.5 sm:py-2.5 text-white backdrop-blur-md transition-all duration-300 hover:border-[#1cd0b4] hover:bg-white/15 hover:shadow-lg hover:shadow-[#1cd0b4]/10 hover:-translate-y-0.5 active:scale-95"
         >
           <div className="flex h-6 w-6 sm:h-7 sm:w-7 shrink-0 items-center justify-center transition-transform duration-300 group-hover:scale-110">
@@ -174,7 +174,7 @@ export default function AppDownloadBadges({
     );
   }
 
-  // Variant: default / hero (Lớn, bắt mắt, bóng bẩy chuẩn thương hiệu Cấp Nước Tóc Tiên)
+  // Variant: default / hero (Lớn, bắt mắt, bóng bẩy chuẩn thương hiệu Tập đoàn Hải Châu Việt Nam)
   return (
     <div className={`flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 ${className}`}>
       {/* Nút App Store */}
@@ -182,7 +182,7 @@ export default function AppDownloadBadges({
         href={appStoreUrl}
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="Tải ứng dụng Cấp Nước Tóc Tiên trên Apple App Store"
+        aria-label="Tải ứng dụng Tập đoàn Hải Châu Việt Nam trên Apple App Store"
         className="group relative flex items-center gap-3.5 rounded-2xl border border-slate-800 bg-[#0c2340] px-5 py-3 text-white shadow-md transition-all duration-300 hover:border-[#1cd0b4] hover:bg-[#07172c] hover:shadow-xl hover:shadow-[#1cd0b4]/20 hover:-translate-y-1 active:scale-95"
       >
         {/* Hiệu ứng viền sáng hover */}
@@ -210,7 +210,7 @@ export default function AppDownloadBadges({
         href={googlePlayUrl}
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="Tải ứng dụng Cấp Nước Tóc Tiên trên Google Play Store"
+        aria-label="Tải ứng dụng Tập đoàn Hải Châu Việt Nam trên Google Play Store"
         className="group relative flex items-center gap-3.5 rounded-2xl border border-slate-800 bg-[#0c2340] px-5 py-3 text-white shadow-md transition-all duration-300 hover:border-[#1cd0b4] hover:bg-[#07172c] hover:shadow-xl hover:shadow-[#1cd0b4]/20 hover:-translate-y-1 active:scale-95"
       >
         {/* Hiệu ứng viền sáng hover */}

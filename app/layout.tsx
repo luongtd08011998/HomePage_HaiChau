@@ -13,8 +13,8 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "CẤP NƯỚC TÓC TIÊN",
-  description: "Đọc tin tức nhanh, chính xác và cập nhật nhất",
+  title: "CÔNG TY TNHH - TẬP ĐOÀN HẢI CHÂU VIỆT NAM",
+  description: "Cổng thông tin điện tử Công ty TNHH - Tập đoàn Hải Châu Việt Nam",
   icons: {
     icon: "/logocty1.jpg",
   },

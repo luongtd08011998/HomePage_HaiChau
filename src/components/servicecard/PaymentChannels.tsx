@@ -229,7 +229,7 @@ export default function PaymentChannels() {
             {[
               "Mở app ngân hàng / ví điện tử",
               "Chọn mục Thanh toán hóa đơn",
-              'Tìm "Cấp nước Tóc Tiên" và nhập mã KH',
+              'Tìm "Tập đoàn Hải Châu" và nhập mã KH',
             ].map((t, idx) => (
               <div
                 key={t}

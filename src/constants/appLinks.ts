@@ -1,5 +1,5 @@
 /**
- * Cấu hình đường link tải ứng dụng Cấp Nước Tóc Tiên trên Android và iOS.
+ * Cấu hình đường link tải ứng dụng Tập đoàn Hải Châu Việt Nam trên Android và iOS.
  * Bạn có thể cấu hình thông qua biến môi trường (.env.local) hoặc sửa trực tiếp tại đây:
  * - NEXT_PUBLIC_APP_STORE_URL: Link ứng dụng trên Apple App Store
  * - NEXT_PUBLIC_GOOGLE_PLAY_URL: Link ứng dụng trên Google Play Store
@@ -16,18 +16,18 @@ export const APP_LINKS = {
     "https://play.google.com/store/apps/details?id=com.toctienltd.cskh",
 
   // Tên ứng dụng hiển thị
-  appName: "Cấp Nước Tóc Tiên CSKH",
+  appName: "Hải Châu CSKH",
 
   // Đường dẫn link thông minh trên website
   smartDownloadPath: "/tai-app",
 
   // Link mã QR thông minh tự động nhận diện thiết bị
   smartQrUrl: (
-    process.env.NEXT_PUBLIC_APP_QR_URL || "https://toctienltd.vn/tai-app"
-  ).replace(/^https?:\/\/beta\.toctienltd\.vn/i, "https://toctienltd.vn"),
+    process.env.NEXT_PUBLIC_APP_QR_URL || "https://haichaugroup.vn/tai-app"
+  ).replace(/^https?:\/\/beta\.haichaugroup\.vn/i, "https://haichaugroup.vn"),
 
   // Giữ lại qrTargetUrl để tương thích ngược
   qrTargetUrl: (
-    process.env.NEXT_PUBLIC_APP_QR_URL || "https://toctienltd.vn/tai-app"
-  ).replace(/^https?:\/\/beta\.toctienltd\.vn/i, "https://toctienltd.vn"),
+    process.env.NEXT_PUBLIC_APP_QR_URL || "https://haichaugroup.vn/tai-app"
+  ).replace(/^https?:\/\/beta\.haichaugroup\.vn/i, "https://haichaugroup.vn"),
 } as const;

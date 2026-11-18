@@ -23,10 +23,10 @@ export default function AppDownloadSection() {
   return (
     <section
       className="hidden md:block relative py-6 sm:py-8 bg-slate-50/60 border-t border-slate-200/60"
-      aria-label="Tải ứng dụng Cấp Nước Tóc Tiên"
+      aria-label="Tải ứng dụng Tập đoàn Hải Châu Việt Nam"
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        {/* Banner mỏng ngang chuẩn nhận diện Cấp Nước Tóc Tiên */}
+        {/* Banner mỏng ngang chuẩn nhận diện Tập đoàn Hải Châu Việt Nam */}
         <div className="relative overflow-hidden rounded-2xl sm:rounded-3xl bg-gradient-to-r from-[#0c2340] via-[#0e2a4d] to-[#07172c] p-5 sm:p-7 text-white shadow-lg border border-slate-700/60">
           {/* Ánh sáng nền trang trí tinh tế */}
           <div
@@ -49,7 +49,7 @@ export default function AppDownloadSection() {
               </div>
 
               <h2 className="mt-2.5 text-lg sm:text-xl md:text-2xl font-extrabold tracking-tight text-white leading-tight">
-                Cấp Nước Tóc Tiên ngay trên{" "}
+                Ứng dụng Hải Châu CSKH ngay trên{" "}
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#1cd0b4] to-cyan-300">
                   điện thoại của bạn
                 </span>

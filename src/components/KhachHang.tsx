@@ -126,8 +126,8 @@ export default function KhachHang() {
           <h2 className="mb-6 text-4xl font-bold text-gray-900 md:text-5xl">Khách Hàng</h2>
           <div className="mx-auto mb-6 h-1 w-20 rounded-full bg-gradient-to-r from-blue-600 to-blue-400" />
           <p className="mx-auto max-w-4xl text-xl leading-relaxed text-gray-600">
-            Với hơn 20 năm qua nhà máy nước Tóc Tiên đã đáp ứng tốt nhu cầu phục vụ các dịch vụ
-            và các khu công nghiệp Phú Mỹ, thị xã Phú Mỹ, khu dân cư và các đơn vị sản xuất kinh doanh khác.
+            Với hơn 20 năm qua Tập đoàn Hải Châu Việt Nam đã đáp ứng tốt nhu cầu phục vụ các dịch vụ
+            và các khu công nghiệp, khu dân cư và các đơn vị sản xuất kinh doanh khác.
             Đây là động lực quan trọng để chúng tôi tự hào và trở nên vững mạnh như ngày hôm nay.
           </p>
         </div>

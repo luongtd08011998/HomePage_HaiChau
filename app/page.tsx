@@ -1,7 +1,6 @@
 import HomeArticleSidebarSection from "@/components/home/HomeArticleSidebarSection";
 import ServiceCards from "@/components/ServiceCards";
 import TvNewsHero from "@/components/home/TvNewsHero";
-import AppDownloadSection from "@/components/home/AppDownloadSection";
 import Link from "next/link";
 import Image from "next/image";
 import { CARD_HOVER_CLASS } from "@/lib/cardHover";
@@ -11,13 +10,8 @@ import { resolveThumb } from "@/lib/publicMediaUrl";
 import type { Article } from "@/types";
 
 export default async function HomePage() {
-  let featuredArticles: Article[] = [];
-  let maintenanceArticles: Article[] = [];
-  let latestArticles: Article[] = [];
-  let waterTestingArticles: Article[] = [];
-
-  try {
-    const [featured, maintenance, latest, waterTesting] = await Promise.all([
+  const [featuredRes, maintenanceRes, latestRes, waterTestingRes] =
+    await Promise.allSettled([
       articleService.getAll({
         type: 1,
         page: 0,
@@ -32,13 +26,26 @@ export default async function HomePage() {
       }),
       categoryService.getArticlesBySlug("xet-nghiem-nuoc", { size: 5 }),
     ]);
-    featuredArticles = featured.result;
-    maintenanceArticles = maintenance.result;
-    latestArticles = latest.result;
-    waterTestingArticles = waterTesting.result;
-  } catch {
-    // API not available — render empty state
-  }
+
+  const featuredArticles: Article[] =
+    featuredRes.status === "fulfilled" ? (featuredRes.value?.result ?? []) : [];
+  const maintenanceArticles: Article[] =
+    maintenanceRes.status === "fulfilled"
+      ? (maintenanceRes.value?.result ?? [])
+      : [];
+  const latestArticles: Article[] =
+    latestRes.status === "fulfilled" ? (latestRes.value?.result ?? []) : [];
+  const waterTestingArticles: Article[] =
+    waterTestingRes.status === "fulfilled"
+      ? (waterTestingRes.value?.result ?? [])
+      : [];
+
+  const heroArticles: Article[] =
+    waterTestingArticles.length > 0
+      ? waterTestingArticles
+      : featuredArticles.length > 0
+        ? featuredArticles
+        : latestArticles;
 
   return (
     <div className="relative flex min-h-0 flex-1 flex-col overflow-x-hidden bg-white">
@@ -58,7 +65,7 @@ export default async function HomePage() {
               <div
                 className={`relative h-[340px] overflow-hidden rounded-2xl sm:h-[420px] lg:flex-1 lg:h-auto lg:min-h-[520px] shadow-sm ${CARD_HOVER_CLASS}`}
               >
-                <TvNewsHero articles={waterTestingArticles} />
+                <TvNewsHero articles={heroArticles} />
               </div>
             </div>
 
@@ -135,9 +142,6 @@ export default async function HomePage() {
 
       {/* Giữ thứ tự: phần dịch vụ ở dưới cùng */}
       <ServiceCards />
-
-      {/* Khu vực giới thiệu Ứng dụng Di động Tóc Tiên (iOS & Android) */}
-      <AppDownloadSection />
     </div>
   );
 }

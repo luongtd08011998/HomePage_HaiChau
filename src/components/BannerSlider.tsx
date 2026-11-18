@@ -6,7 +6,7 @@ import { CARD_HOVER_CLASS } from "@/lib/cardHover";
 
 const IMAGES = ["/1.jpg", "/2.jpg", "/3.jpg", "/4.jpg", "/5.jpg"];
 const CAPTIONS = [
-  "Nâng cấp hệ thống đường ống cấp nước Tóc Tiên",
+  "Nâng cấp hệ thống đường ống cấp nước Hải Châu",
   "Báo cáo chất lượng nước sinh hoạt",
   "Quy trình xử lý nước hiện đại tại nhà máy",
   "Mở rộng mạng lưới cấp nước khu vực mới",

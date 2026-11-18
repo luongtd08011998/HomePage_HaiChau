@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { CARD_HOVER_CLASS } from "@/lib/cardHover";
-import PaymentChannels from "./servicecard/PaymentChannels";
 
 function IconPhone({ className }: { className?: string }) {
   return (
@@ -96,7 +95,7 @@ export default function ServiceCards() {
                 <div className="flex items-center gap-1.5">
                   <span className="text-[10px] font-semibold uppercase tracking-wider text-slate-500">Hotline CSKH</span>
                   <span className="h-1 w-1 rounded-full bg-teal-500" />
-                  <span className="text-[11px] font-bold tabular-nums text-teal-700">0254 3 894 894</span>
+                  <span className="text-[11px] font-bold tabular-nums text-teal-700">0254.3859380</span>
                 </div>
                 <h2 className="text-sm font-bold uppercase tracking-wide text-[#0c2340] truncate">
                   Hỗ trợ trực tuyến
@@ -105,7 +104,7 @@ export default function ServiceCards() {
               </div>
             </div>
             <a
-              href="tel:02543894894"
+              href="tel:02543859380"
               className="inline-flex h-8 shrink-0 items-center gap-1 rounded-full bg-[#1cd0b4] px-3.5 text-xs font-bold text-[#0c2340] shadow-xs transition hover:bg-[#18bda4] active:scale-95"
             >
               <span>Gọi</span>
@@ -169,10 +168,10 @@ export default function ServiceCards() {
             <p className="text-sm font-medium text-slate-500">
               Hotline{" "}
               <a
-                href="tel:02543894894"
+                href="tel:02543859380"
                 className="font-bold tabular-nums text-[#0c2340] underline-offset-2 hover:underline"
               >
-                0254 3 894 894
+                0254.3859380
               </a>
             </p>
             <h2 className="mt-2 text-lg font-bold uppercase tracking-wide text-[#0c2340]">
@@ -183,7 +182,7 @@ export default function ServiceCards() {
               thống nước.
             </p>
             <a
-              href="tel:02543894894"
+              href="tel:02543859380"
               className="mt-5 inline-flex items-center rounded-full bg-[#1cd0b4] px-6 py-2 text-xs font-bold text-[#0c2340] shadow-sm transition hover:bg-[#18bda4]"
             >
               Gọi ngay →
@@ -226,10 +225,6 @@ export default function ServiceCards() {
               Mở đăng ký online →
             </span>
           </Link>
-        </div>
-
-        <div className="mt-7 sm:mt-16">
-          <PaymentChannels />
         </div>
       </div>
     </section>

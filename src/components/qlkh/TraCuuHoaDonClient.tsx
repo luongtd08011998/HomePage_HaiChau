@@ -650,7 +650,7 @@ export default function TraCuuHoaDonClient() {
             Tra cứu hóa đơn tiền nước
           </h1>
           <p className="text-gray-500 text-sm mt-1">
-            Công ty TNHH Cấp nước Tóc Tiên — khu vực phục vụ của quý khách.
+            Công ty TNHH - Tập đoàn Hải Châu Việt Nam — khu vực phục vụ của quý khách.
           </p>
         </div>
         <div className="flex gap-2">
@@ -877,7 +877,7 @@ export default function TraCuuHoaDonClient() {
                   Hóa đơn tiền nước
                 </p>
                 <p className="font-bold text-lg mt-1">
-                  CÔNG TY TNHH CẤP NƯỚC TÓC TIÊN
+                  CÔNG TY TNHH - TẬP ĐOÀN HẢI CHÂU VIỆT NAM
                 </p>
               </div>
               <div className="p-6 space-y-4 text-sm">
@@ -990,7 +990,7 @@ export default function TraCuuHoaDonClient() {
                   Hóa đơn dịch vụ
                 </p>
                 <p className="font-bold text-lg mt-1">
-                  CÔNG TY TNHH CẤP NƯỚC TÓC TIÊN
+                  CÔNG TY TNHH - TẬP ĐOÀN HẢI CHÂU VIỆT NAM
                 </p>
               </div>
               <div className="p-6 space-y-4 text-sm">

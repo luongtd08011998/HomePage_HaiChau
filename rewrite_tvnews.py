@@ -40,7 +40,7 @@ new_func = """export default function TvNewsHero({ articles = [] }: TvNewsHeroPr
     category: a.category?.name || "Tin tức",
     date: new Date(a.createdAt).toLocaleDateString("vi-VN"),
     readTime: "5 phút đọc",
-    author: a.author?.name || "Tóc Tiên",
+    author: a.author?.name || "Hải Châu",
   }));
 
   useEffect(() => {

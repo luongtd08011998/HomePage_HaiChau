@@ -56,7 +56,7 @@ export default function TvNewsHero({ articles = [] }: TvNewsHeroProps) {
     category: a.category?.name || "Tin tức",
     date: new Date(a.createdAt).toLocaleDateString("vi-VN"),
     readTime: "5 phút đọc",
-    author: a.author?.name || "Tóc Tiên",
+    author: a.author?.name || "Hải Châu",
   }));
 
   useEffect(() => {

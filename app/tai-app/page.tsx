@@ -5,9 +5,9 @@ import SmartDownloadClient from "@/components/app-download/SmartDownloadClient";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Tải ứng dụng CSKH - Cấp Nước Tóc Tiên (iOS & Android)",
+  title: "Tải ứng dụng CSKH - Tập đoàn Hải Châu Việt Nam (iOS & Android)",
   description:
-    "Tải ứng dụng chăm sóc khách hàng Cấp Nước Tóc Tiên chính thức trên Apple App Store và Google Play Store. Quét mã QR tự động nhận diện thiết bị.",
+    "Tải ứng dụng chăm sóc khách hàng Tập đoàn Hải Châu Việt Nam chính thức trên Apple App Store và Google Play Store. Quét mã QR tự động nhận diện thiết bị.",
 };
 
 interface PageProps {

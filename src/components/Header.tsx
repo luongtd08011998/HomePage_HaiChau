@@ -270,7 +270,7 @@ function AnimatedLogoMark() {
         <span className="relative block h-full min-h-0 w-full backface-hidden [transform:translateZ(0)]">
           <Image
             src="/logocty1.jpg"
-            alt="Logo Công ty TNHH Cấp Nước Tóc Tiên"
+            alt="Logo Công ty TNHH - Tập đoàn Hải Châu Việt Nam"
             fill
             className="object-cover"
             sizes="(max-width: 640px) 64px, 72px"
@@ -558,10 +558,10 @@ export default function Header({ categoryTree }: HeaderProps) {
                     </span>
                     <span className="flex min-w-0 flex-1 flex-col justify-center gap-0.5">
                       <span className="block text-[10px] font-semibold uppercase leading-tight tracking-[0.14em] text-slate-500 sm:text-[0.65rem] sm:tracking-[0.22em]">
-                        Tập đoàn Hải Châu Việt Nam
+                        Công ty TNHH
                       </span>
                       <span className="line-clamp-1 text-[13px] font-extrabold leading-snug tracking-tight text-[#0c2340] sm:line-clamp-none sm:text-lg md:text-xl">
-                        CÔNG TY TNHH CẤP NƯỚC TÓC TIÊN
+                        TẬP ĐOÀN HẢI CHÂU VIỆT NAM
                       </span>
                     </span>
                   </span>
@@ -863,13 +863,13 @@ export default function Header({ categoryTree }: HeaderProps) {
                   </span>
                   <div className="flex min-w-0 flex-col justify-center">
                     <span className="block text-[9px] font-semibold uppercase leading-tight tracking-[0.12em] text-slate-500">
-                      Tập đoàn Hải Châu Việt Nam
+                      Công ty TNHH
                     </span>
                     <span
                       id="mobile-nav-title"
                       className="line-clamp-1 text-[12px] font-extrabold uppercase leading-snug tracking-tight text-[#0c2340] sm:text-[13px]"
                     >
-                      CÔNG TY TNHH CẤP NƯỚC TÓC TIÊN
+                      TẬP ĐOÀN HẢI CHÂU VIỆT NAM
                     </span>
                   </div>
                 </Link>
@@ -1106,15 +1106,15 @@ export default function Header({ categoryTree }: HeaderProps) {
                       <rect x="5" y="2" width="14" height="20" rx="3" />
                       <path d="M12 18h.01" />
                     </svg>
-                    <span>Tải App Cấp Nước Tóc Tiên</span>
+                    <span>Tải App Hải Châu CSKH</span>
                   </Link>
 
                   <a
-                    href="tel:02543894894"
+                    href="tel:02543859380"
                     className="flex items-center justify-center gap-2 py-2 text-xs font-semibold text-slate-500 transition-colors hover:text-[#0c2340]"
                   >
                     <IconPhone className="h-3.5 w-3.5 text-teal-600" />
-                    <span>Hotline CSKH: 0254 3 894 894</span>
+                    <span>Hotline CSKH: 0254.3859380</span>
                   </a>
                 </div>
               </nav>
