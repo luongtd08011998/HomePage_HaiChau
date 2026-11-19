@@ -5,6 +5,7 @@ import ArticleListPagination from "@/components/article/ArticleListPagination";
 import { categoryService } from "@/services/category";
 import type { Article, PaginatedMeta } from "@/types";
 import TraCuuHoaDonClient from "@/components/qlkh/TraCuuHoaDonClient";
+import GiaNuocSinhHoatSection from "@/components/qlkh/GiaNuocSinhHoatSection";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -80,6 +81,10 @@ export default async function CategoryPage({ params, searchParams }: Props) {
         <RegistrationForm />
       </div>
     );
+  }
+
+  if (slug === "gia-nuoc-sinh-hoat") {
+    return <GiaNuocSinhHoatSection />;
   }
 
   return (
