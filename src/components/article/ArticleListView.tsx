@@ -183,6 +183,8 @@ export type ArticleListViewProps = {
   /** `null` = trang /news (Tất cả); string = slug danh mục đang xem */
   activeCategorySlug?: string | null;
   showCategoryTabs?: boolean;
+  /** Ẩn tiêu đề và breadcrumb mặc định khi đã có CategorySubmenuTabsHeader ở trên */
+  hideHeroHeader?: boolean;
   children?: React.ReactNode;
 };
 
@@ -194,6 +196,7 @@ export default function ArticleListView({
   categories = [],
   activeCategorySlug = null,
   showCategoryTabs = true,
+  hideHeroHeader = false,
   children,
 }: ArticleListViewProps) {
   const router = useRouter();
@@ -226,22 +229,26 @@ export default function ArticleListView({
 
   return (
     <div className="min-h-screen bg-[#fcfdfe]">
-      <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
-        {/* BREADCRUMB PHONG CÁCH LACROIX */}
-        <nav aria-label="Breadcrumb" className="mb-4 flex items-center gap-2 text-sm text-slate-500">
-          <Link href="/" className="transition-colors hover:text-teal-600">
-            Trang chủ
-          </Link>
-          <span className="text-slate-400">-</span>
-          <span className="font-semibold text-slate-800">{heroTitle}</span>
-        </nav>
+      <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 sm:py-10 lg:px-8">
+        {!hideHeroHeader && (
+          <>
+            {/* BREADCRUMB PHONG CÁCH LACROIX */}
+            <nav aria-label="Breadcrumb" className="mb-4 flex items-center gap-2 text-sm text-slate-500">
+              <Link href="/" className="transition-colors hover:text-teal-600">
+                Trang chủ
+              </Link>
+              <span className="text-slate-400">-</span>
+              <span className="font-semibold text-slate-800">{heroTitle}</span>
+            </nav>
 
-        {/* TIÊU ĐỀ TRANG */}
-        <div>
-          <h1 className="text-3xl font-bold tracking-tight text-[#0c2340] sm:text-4xl md:text-5xl">
-            {heroTitle}
-          </h1>
-        </div>
+            {/* TIÊU ĐỀ TRANG */}
+            <div>
+              <h1 className="text-3xl font-bold tracking-tight text-[#0c2340] sm:text-4xl md:text-5xl">
+                {heroTitle}
+              </h1>
+            </div>
+          </>
+        )}
 
         {/* KHỐI LỌC BÀI VIẾT (FILTER BAR PHONG CÁCH LACROIX) */}
         {showCategoryTabs && (

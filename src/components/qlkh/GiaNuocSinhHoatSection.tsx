@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 interface PriceRow {
   stt?: string;
   title: string;
@@ -102,24 +100,8 @@ const PRICE_ROWS: PriceRow[] = [
 
 export default function GiaNuocSinhHoatSection() {
   return (
-    <div className="min-h-screen bg-[#fcfdfe] py-8 sm:py-12">
+    <div className="bg-[#fcfdfe] py-8 sm:py-10">
       <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
-        {/* Breadcrumb */}
-        <nav
-          aria-label="Breadcrumb"
-          className="mb-6 flex items-center gap-2 text-sm text-slate-500"
-        >
-          <Link href="/" className="transition-colors hover:text-teal-600">
-            Trang chủ
-          </Link>
-          <span className="text-slate-400">/</span>
-          <span className="text-slate-600">Quan hệ khách hàng</span>
-          <span className="text-slate-400">/</span>
-          <span className="font-semibold text-[#0c2340]">
-            Giá nước sinh hoạt
-          </span>
-        </nav>
-
         {/* Khối bài viết bảng giá nước */}
         <div className="rounded-2xl border border-slate-200/90 bg-white p-4 shadow-sm sm:rounded-3xl sm:p-8">
           <h1 className="mb-6 text-center text-lg font-extrabold tracking-tight text-[#0c2340] uppercase sm:text-2xl">
