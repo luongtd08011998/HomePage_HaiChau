@@ -309,15 +309,11 @@ function NavDropdown({
           const hasChildren = child.children && child.children.length > 0;
           const href = child.href
               ? child.href
-              : child.slug === "lien-he"
-                ? "/lien-he"
-                : `/category/${child.slug}`;
+              : `/category/${child.slug}`;
           
           const isActive = child.href
               ? pathname === child.href
-              : child.slug === "lien-he"
-                ? pathname === "/lien-he"
-                : pathname === `/category/${child.slug}`;
+              : pathname === `/category/${child.slug}`;
 
           return (
             <div key={child.id} className="group/sub relative">
@@ -356,12 +352,8 @@ function NavDropdown({
                 <div className="absolute left-full top-0 hidden min-w-[14rem] pl-0.5 group-hover/sub:block">
                   <div className="rounded-xl border border-gray-100 bg-white py-1 shadow-xl">
                     {child.children.map((grandChild) => {
-                      const gcHref = grandChild.slug === "lien-he"
-                          ? "/lien-he"
-                          : `/category/${grandChild.slug}`;
-                      const gcActive = grandChild.slug === "lien-he"
-                          ? pathname === "/lien-he"
-                          : pathname === `/category/${grandChild.slug}`;
+                      const gcHref = `/category/${grandChild.slug}`;
+                      const gcActive = pathname === `/category/${grandChild.slug}`;
 
                       return (
                         <Link
@@ -745,10 +737,7 @@ export default function Header({ categoryTree }: HeaderProps) {
 
               {roots.map((root) => {
                 const children = root.children ?? [];
-                const isLienHe = root.slug === "lien-he";
-                const rootHref = isLienHe
-                  ? "/lien-he"
-                  : `/category/${root.slug}`;
+                const rootHref = `/category/${root.slug}`;
                 
                 // Root được coi là active nếu pathname là chính nó hoặc là bất kỳ con/cháu nào của nó
                 const checkActiveRecursive = (nodes: CategoryNode[]): boolean => {
@@ -759,15 +748,11 @@ export default function Header({ categoryTree }: HeaderProps) {
                   );
                 };
 
-                const rootActive = (isLienHe
-                      ? pathname === "/lien-he"
-                      : pathname === `/category/${root.slug}`) ||
+                const rootActive = pathname === `/category/${root.slug}` ||
                     checkActiveRecursive(children);
 
                 if (children.length === 0) {
-                  const active = isLienHe
-                    ? pathname === "/lien-he"
-                    : pathname === `/category/${root.slug}`;
+                  const active = pathname === `/category/${root.slug}`;
                   return (
                     <Link
                       key={root.id}
@@ -922,13 +907,8 @@ export default function Header({ categoryTree }: HeaderProps) {
                   {/* Danh sách các chuyên mục roots */}
                   {roots.map((root) => {
                     const children = root.children ?? [];
-                    const isLienHe = root.slug === "lien-he";
-                    const rootHref = isLienHe
-                      ? "/lien-he"
-                      : `/category/${root.slug}`;
-                    const active = isLienHe
-                      ? pathname === "/lien-he"
-                      : pathname === `/category/${root.slug}`;
+                    const rootHref = `/category/${root.slug}`;
+                    const active = pathname === `/category/${root.slug}`;
 
                     if (children.length === 0) {
                       return (
@@ -993,14 +973,10 @@ export default function Header({ categoryTree }: HeaderProps) {
                           {children.map((child) => {
                             const childHref = child.href
                               ? child.href
-                              : child.slug === "lien-he"
-                                ? "/lien-he"
-                                : `/category/${child.slug}`;
+                              : `/category/${child.slug}`;
                             const childActive = child.href
                               ? pathname === child.href
-                              : child.slug === "lien-he"
-                                ? pathname === "/lien-he"
-                                : pathname === `/category/${child.slug}`;
+                              : pathname === `/category/${child.slug}`;
 
                             const hasGrandChildren = child.children && child.children.length > 0;
 
