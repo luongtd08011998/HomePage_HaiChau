@@ -8,9 +8,8 @@ export const FALLBACK_CATEGORY_TREE = [
     slug: "gioi-thieu",
     active: 1,
     children: [
-      { id: 33, name: "Hoạt động và sự kiện", slug: "hoat-dong-su-kien", active: 1, children: [] },
-      { id: 49, name: "Hình thành và phát triển", slug: "hinh-thanh-phat-trien", active: 1, children: [] },
-      { id: 50, name: "Liên hệ", slug: "lien-he-cong-ty", active: 1, children: [] },
+      { id: 49, name: "Quá trình hình thành và phát triển", slug: "qua-trinh-hinh-thanh-phat-trien", active: 1, children: [] },
+      { id: 50, name: "Liên hệ", slug: "lien-he", active: 1, children: [] },
     ],
   },
   {

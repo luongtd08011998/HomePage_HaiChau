@@ -11,6 +11,8 @@ import {
 import type { Article, PaginatedMeta } from "@/types";
 import TraCuuHoaDonClient from "@/components/qlkh/TraCuuHoaDonClient";
 import GiaNuocSinhHoatSection from "@/components/qlkh/GiaNuocSinhHoatSection";
+import LienHeSection from "@/components/gioi-thieu/LienHeSection";
+import QuaTrinhHinhThanhSection from "@/components/gioi-thieu/QuaTrinhHinhThanhSection";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -55,6 +57,20 @@ export default async function CategoryPage({ params, searchParams }: Props) {
 
     if (effectiveSlug === "gia-nuoc-sinh-hoat") {
       return <GiaNuocSinhHoatSection />;
+    }
+
+    if (
+      effectiveSlug === "lien-he" ||
+      effectiveSlug === "lien-he-cong-ty"
+    ) {
+      return <LienHeSection />;
+    }
+
+    if (
+      effectiveSlug === "qua-trinh-hinh-thanh-phat-trien" ||
+      effectiveSlug === "hinh-thanh-phat-trien"
+    ) {
+      return <QuaTrinhHinhThanhSection />;
     }
 
     if (effectiveSlug === "thong-bao-hop-quy") {
