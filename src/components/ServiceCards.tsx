@@ -62,99 +62,99 @@ function IconRegisterOnline({ className }: { className?: string }) {
   );
 }
 
-const cardShell = `flex flex-col items-center rounded-3xl border border-slate-200/80 bg-[#ebf4f6] p-6 text-center shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md sm:p-8 ${CARD_HOVER_CLASS}`;
+const cardShell = `flex flex-col items-center rounded-3xl border border-rose-200/80 bg-[#fdf4f5] p-6 text-center shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-[#9b111e]/35 hover:shadow-md sm:p-8 ${CARD_HOVER_CLASS}`;
 
 /**
- * Trang dịch vụ: Hotline, tra cứu hóa đơn, thanh toán — dùng tại `/servicecard`.
- * Phong cách Lacroix Environment: nền sáng, card #ebf4f6, chữ #0c2340, nút #1cd0b4.
+ * Trang dịch vụ: Hotline, tra cứu hóa đơn, đăng ký lắp đặt — dùng tại `/servicecard`.
+ * Đồng bộ tông màu Đỏ Ruby (Ruby Red) của Tập đoàn Hải Châu Việt Nam.
  */
 export default function ServiceCards() {
   return (
     <section
-      className="relative overflow-hidden bg-white border-t border-slate-100"
+      className="relative overflow-hidden bg-white border-t border-rose-100/80"
       aria-labelledby="service-cards-heading"
     >
       <div
         className="pointer-events-none absolute inset-0 overflow-hidden"
         aria-hidden
       >
-        <div className="absolute -left-20 top-32 h-64 w-64 rounded-full bg-cyan-100/30 blur-3xl" />
-        <div className="absolute -right-10 bottom-20 h-72 w-72 rounded-full bg-sky-100/30 blur-3xl" />
+        <div className="absolute -left-20 top-32 h-64 w-64 rounded-full bg-rose-100/40 blur-3xl" />
+        <div className="absolute -right-10 bottom-20 h-72 w-72 rounded-full bg-amber-100/35 blur-3xl" />
       </div>
 
       <div className="relative mx-auto max-w-7xl px-4 pt-5 pb-8 sm:px-6 sm:pt-10 sm:pb-20">
         {/* Mobile View (< md): 3 thẻ hàng ngang nhỏ gọn, tiết kiệm không gian màn hình */}
         <div className="grid grid-cols-1 gap-2.5 md:hidden">
           {/* Card 1: Hotline */}
-          <div className="flex items-center justify-between gap-3 rounded-2xl border border-slate-200/80 bg-[#ebf4f6] p-3 shadow-2xs transition active:scale-[0.99]">
+          <div className="flex items-center justify-between gap-3 rounded-2xl border border-rose-200/80 bg-[#fdf4f5] p-3 shadow-2xs transition active:scale-[0.99]">
             <div className="flex items-center gap-3 min-w-0">
-              <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-white text-[#0c2340] shadow-xs ring-1 ring-slate-200/60">
-                <IconPhone className="h-5 w-5 text-teal-600" />
+              <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-white text-[#9b111e] shadow-xs ring-1 ring-rose-200/70">
+                <IconPhone className="h-5 w-5 text-[#9b111e]" />
               </div>
               <div className="min-w-0">
                 <div className="flex items-center gap-1.5">
                   <span className="text-[10px] font-semibold uppercase tracking-wider text-slate-500">Hotline CSKH</span>
-                  <span className="h-1 w-1 rounded-full bg-teal-500" />
-                  <span className="text-[11px] font-bold tabular-nums text-teal-700">0254.3859380</span>
+                  <span className="h-1 w-1 rounded-full bg-[#9b111e]" />
+                  <span className="text-[11px] font-bold tabular-nums text-[#9b111e]">0254.3859380</span>
                 </div>
-                <h2 className="text-sm font-bold uppercase tracking-wide text-[#0c2340] truncate">
+                <h2 className="text-sm font-bold uppercase tracking-wide text-[#580811] truncate">
                   Hỗ trợ trực tuyến
                 </h2>
-                <p className="text-[11px] text-slate-500 truncate">Tư vấn, sửa chữa & tiếp nhận hệ thống nước</p>
+                <p className="text-[11px] text-slate-600 truncate">Tư vấn, sửa chữa & tiếp nhận hệ thống nước</p>
               </div>
             </div>
             <a
               href="tel:02543859380"
-              className="inline-flex h-8 shrink-0 items-center gap-1 rounded-full bg-[#1cd0b4] px-3.5 text-xs font-bold text-[#0c2340] shadow-xs transition hover:bg-[#18bda4] active:scale-95"
+              className="inline-flex h-8 shrink-0 items-center gap-1 rounded-full bg-gradient-to-r from-[#9b111e] to-[#7c0d18] px-3.5 text-xs font-bold text-white shadow-xs transition hover:from-[#7c0d18] hover:to-[#580811] active:scale-95"
             >
               <span>Gọi</span>
-              <span className="text-xs">→</span>
+              <span className="text-xs text-amber-300">→</span>
             </a>
           </div>
 
           {/* Card 2: Tra cứu hóa đơn */}
           <Link
             href="/category/tra-cuu-hoa-don"
-            className="flex items-center justify-between gap-3 rounded-2xl border border-slate-200/80 bg-[#ebf4f6] p-3 shadow-2xs transition active:scale-[0.99]"
+            className="flex items-center justify-between gap-3 rounded-2xl border border-rose-200/80 bg-[#fdf4f5] p-3 shadow-2xs transition active:scale-[0.99]"
           >
             <div className="flex items-center gap-3 min-w-0">
-              <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-white text-[#0c2340] shadow-xs ring-1 ring-slate-200/60">
-                <IconInvoice className="h-5 w-5 text-teal-600" />
+              <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-white text-[#9b111e] shadow-xs ring-1 ring-rose-200/70">
+                <IconInvoice className="h-5 w-5 text-[#9b111e]" />
               </div>
               <div className="min-w-0">
                 <span className="text-[10px] font-semibold uppercase tracking-wider text-slate-500">Tiện ích tra cứu</span>
-                <h2 className="text-sm font-bold uppercase tracking-wide text-[#0c2340] truncate">
+                <h2 className="text-sm font-bold uppercase tracking-wide text-[#580811] truncate">
                   Tra cứu hóa đơn
                 </h2>
-                <p className="text-[11px] text-slate-500 truncate">Kiểm tra tiền nước nhanh theo mã KH</p>
+                <p className="text-[11px] text-slate-600 truncate">Kiểm tra tiền nước nhanh theo mã KH</p>
               </div>
             </div>
-            <span className="inline-flex h-8 shrink-0 items-center gap-1 rounded-full bg-[#1cd0b4] px-3 text-xs font-bold text-[#0c2340] shadow-xs transition hover:bg-[#18bda4]">
+            <span className="inline-flex h-8 shrink-0 items-center gap-1 rounded-full bg-gradient-to-r from-[#9b111e] to-[#7c0d18] px-3 text-xs font-bold text-white shadow-xs transition hover:from-[#7c0d18] hover:to-[#580811]">
               <span>Tra cứu</span>
-              <span className="text-xs">→</span>
+              <span className="text-xs text-amber-300">→</span>
             </span>
           </Link>
 
           {/* Card 3: Đăng ký lắp đặt */}
           <Link
             href="/category/dang-ky-lap-dat-truc-tuyen"
-            className="flex items-center justify-between gap-3 rounded-2xl border border-slate-200/80 bg-[#ebf4f6] p-3 shadow-2xs transition active:scale-[0.99]"
+            className="flex items-center justify-between gap-3 rounded-2xl border border-rose-200/80 bg-[#fdf4f5] p-3 shadow-2xs transition active:scale-[0.99]"
           >
             <div className="flex items-center gap-3 min-w-0">
-              <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-white text-[#0c2340] shadow-xs ring-1 ring-slate-200/60">
-                <IconRegisterOnline className="h-5 w-5 text-teal-600" />
+              <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-white text-[#9b111e] shadow-xs ring-1 ring-rose-200/70">
+                <IconRegisterOnline className="h-5 w-5 text-[#9b111e]" />
               </div>
               <div className="min-w-0">
                 <span className="text-[10px] font-semibold uppercase tracking-wider text-slate-500">Dịch vụ online</span>
-                <h2 className="text-sm font-bold uppercase tracking-wide text-[#0c2340] truncate">
+                <h2 className="text-sm font-bold uppercase tracking-wide text-[#580811] truncate">
                   Đăng ký lắp đặt
                 </h2>
-                <p className="text-[11px] text-slate-500 truncate">Gửi hồ sơ lắp đồng hồ nước trực tuyến</p>
+                <p className="text-[11px] text-slate-600 truncate">Gửi hồ sơ lắp đồng hồ nước trực tuyến</p>
               </div>
             </div>
-            <span className="inline-flex h-8 shrink-0 items-center gap-1 rounded-full bg-[#1cd0b4] px-3 text-xs font-bold text-[#0c2340] shadow-xs transition hover:bg-[#18bda4]">
+            <span className="inline-flex h-8 shrink-0 items-center gap-1 rounded-full bg-gradient-to-r from-[#9b111e] to-[#7c0d18] px-3 text-xs font-bold text-white shadow-xs transition hover:from-[#7c0d18] hover:to-[#580811]">
               <span>Đăng ký</span>
-              <span className="text-xs">→</span>
+              <span className="text-xs text-amber-300">→</span>
             </span>
           </Link>
         </div>
@@ -162,19 +162,19 @@ export default function ServiceCards() {
         {/* Desktop View (md+): 3 cột đầy đủ ban đầu */}
         <div className="hidden md:grid md:grid-cols-3 md:gap-6">
           <div className={cardShell}>
-            <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-white text-[#0c2340] shadow-sm ring-1 ring-slate-200/60">
-              <IconPhone className="h-7 w-7 text-teal-600" />
+            <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-white text-[#9b111e] shadow-sm ring-1 ring-rose-200/70">
+              <IconPhone className="h-7 w-7 text-[#9b111e]" />
             </div>
             <p className="text-sm font-medium text-slate-500">
               Hotline{" "}
               <a
                 href="tel:02543859380"
-                className="font-bold tabular-nums text-[#0c2340] underline-offset-2 hover:underline"
+                className="font-bold tabular-nums text-[#7c0d18] underline-offset-2 hover:underline"
               >
                 0254.3859380
               </a>
             </p>
-            <h2 className="mt-2 text-lg font-bold uppercase tracking-wide text-[#0c2340]">
+            <h2 className="mt-2 text-lg font-extrabold uppercase tracking-wide text-[#580811]">
               Hỗ trợ trực tuyến
             </h2>
             <p className="mt-2 text-sm leading-relaxed text-slate-600">
@@ -183,9 +183,10 @@ export default function ServiceCards() {
             </p>
             <a
               href="tel:02543859380"
-              className="mt-5 inline-flex items-center rounded-full bg-[#1cd0b4] px-6 py-2 text-xs font-bold text-[#0c2340] shadow-sm transition hover:bg-[#18bda4]"
+              className="mt-5 inline-flex items-center gap-1.5 rounded-full bg-gradient-to-r from-[#9b111e] to-[#7c0d18] px-6 py-2 text-xs font-bold text-white shadow-sm transition hover:from-[#7c0d18] hover:to-[#580811]"
             >
-              Gọi ngay →
+              <span>Gọi ngay</span>
+              <span className="text-amber-300">→</span>
             </a>
           </div>
 
@@ -193,17 +194,18 @@ export default function ServiceCards() {
             href="/category/tra-cuu-hoa-don"
             className={cardShell}
           >
-            <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-white text-[#0c2340] shadow-sm ring-1 ring-slate-200/60">
-              <IconInvoice className="h-7 w-7 text-teal-600" />
+            <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-white text-[#9b111e] shadow-sm ring-1 ring-rose-200/70">
+              <IconInvoice className="h-7 w-7 text-[#9b111e]" />
             </div>
-            <h2 className="text-lg font-bold uppercase tracking-wide text-[#0c2340]">
+            <h2 className="text-lg font-extrabold uppercase tracking-wide text-[#580811]">
               Tra cứu hóa đơn
             </h2>
             <p className="mt-2 text-sm leading-relaxed text-slate-600">
               Tra cứu hóa đơn tiền nước nhanh chóng theo mã khách hàng.
             </p>
-            <span className="mt-5 inline-flex items-center rounded-full bg-[#1cd0b4] px-6 py-2 text-xs font-bold text-[#0c2340] shadow-sm transition hover:bg-[#18bda4]">
-              Mở tra cứu →
+            <span className="mt-5 inline-flex items-center gap-1.5 rounded-full bg-gradient-to-r from-[#9b111e] to-[#7c0d18] px-6 py-2 text-xs font-bold text-white shadow-sm transition hover:from-[#7c0d18] hover:to-[#580811]">
+              <span>Mở tra cứu</span>
+              <span className="text-amber-300">→</span>
             </span>
           </Link>
 
@@ -211,18 +213,19 @@ export default function ServiceCards() {
             href="/category/dang-ky-lap-dat-truc-tuyen"
             className={cardShell}
           >
-            <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-white text-[#0c2340] shadow-sm ring-1 ring-slate-200/60">
-              <IconRegisterOnline className="h-7 w-7 text-teal-600" />
+            <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-white text-[#9b111e] shadow-sm ring-1 ring-rose-200/70">
+              <IconRegisterOnline className="h-7 w-7 text-[#9b111e]" />
             </div>
-            <h2 className="text-lg font-bold uppercase tracking-wide text-[#0c2340]">
+            <h2 className="text-lg font-extrabold uppercase tracking-wide text-[#580811]">
               Đăng ký lắp đặt trực tuyến
             </h2>
             <p className="mt-2 text-sm leading-relaxed text-slate-600">
               Gửi yêu cầu lắp mới trực tuyến qua website — Sau đó bộ phận CSKH
               hướng dẫn hồ sơ và lịch khảo sát.
             </p>
-            <span className="mt-5 inline-flex items-center rounded-full bg-[#1cd0b4] px-6 py-2 text-xs font-bold text-[#0c2340] shadow-sm transition hover:bg-[#18bda4]">
-              Mở đăng ký online →
+            <span className="mt-5 inline-flex items-center gap-1.5 rounded-full bg-gradient-to-r from-[#9b111e] to-[#7c0d18] px-6 py-2 text-xs font-bold text-white shadow-sm transition hover:from-[#7c0d18] hover:to-[#580811]">
+              <span>Mở đăng ký online</span>
+              <span className="text-amber-300">→</span>
             </span>
           </Link>
         </div>
