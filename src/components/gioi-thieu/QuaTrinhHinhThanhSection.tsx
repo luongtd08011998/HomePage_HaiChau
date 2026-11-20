@@ -70,19 +70,19 @@ export default function QuaTrinhHinhThanhSection() {
     <div className="bg-[#fcfdfe] py-8 sm:py-12">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 space-y-10">
         {/* 1. KHỐI GIỚI THIỆU TỔNG QUAN */}
-        <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-[#0c2340] via-[#0e2d52] to-[#081a30] p-6 text-white shadow-lg sm:p-10">
+        <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-[#9b111e] via-[#7c0d18] to-[#580811] p-6 text-white shadow-lg sm:p-10">
           <div
-            className="pointer-events-none absolute -top-20 -right-20 h-72 w-72 rounded-full bg-[#1cd0b4]/15 blur-3xl"
+            className="pointer-events-none absolute -top-20 -right-20 h-72 w-72 rounded-full bg-amber-300/15 blur-3xl"
             aria-hidden="true"
           />
           <div className="relative z-10 max-w-4xl">
-            <span className="inline-flex items-center rounded-full bg-[#1cd0b4]/20 px-4 py-1 text-xs font-bold tracking-wider text-[#1cd0b4] uppercase ring-1 ring-[#1cd0b4]/30">
+            <span className="inline-flex items-center rounded-full bg-amber-300/20 px-4 py-1 text-xs font-bold tracking-wider text-amber-300 uppercase ring-1 ring-amber-300/30">
               Tổng quan doanh nghiệp
             </span>
             <h2 className="mt-4 text-xl font-extrabold tracking-tight text-white uppercase sm:text-3xl">
               CÔNG TY TNHH - TẬP ĐOÀN HẢI CHÂU VIỆT NAM
             </h2>
-            <p className="mt-4 text-sm leading-relaxed text-slate-200 sm:text-base">
+            <p className="mt-4 text-sm leading-relaxed text-rose-50/95 sm:text-base">
               Trải qua quá trình xây dựng và trưởng thành,{" "}
               <strong className="text-white">
                 Công ty TNHH - Tập đoàn Hải Châu Việt Nam
@@ -91,9 +91,9 @@ export default function QuaTrinhHinhThanhSection() {
               vực đầu tư hạ tầng, sản xuất và cung cấp nước sạch phục vụ sinh
               hoạt, sản xuất công nghiệp và dịch vụ đô thị.
             </p>
-            <p className="mt-3 text-sm leading-relaxed text-slate-300 sm:text-base">
+            <p className="mt-3 text-sm leading-relaxed text-rose-50/85 sm:text-base">
               Với phương châm{" "}
-              <em className="font-semibold text-[#1cd0b4]">
+              <em className="font-semibold text-amber-300">
                 &ldquo;An toàn chất lượng – Vận hành bền vững – Phục vụ tận
                 tâm&rdquo;
               </em>
@@ -191,19 +191,19 @@ export default function QuaTrinhHinhThanhSection() {
             ))}
           </div>
 
-          <div className="mt-8 flex flex-col items-center justify-between gap-4 rounded-2xl bg-[#0c2340] px-6 py-5 text-white sm:flex-row">
+          <div className="mt-8 flex flex-col items-center justify-between gap-4 rounded-2xl bg-gradient-to-r from-[#9b111e] via-[#7c0d18] to-[#580811] px-6 py-5 text-white sm:flex-row">
             <div>
               <h4 className="text-sm font-bold text-white sm:text-base">
                 Thông tin liên hệ Công ty TNHH - Tập đoàn Hải Châu Việt Nam
               </h4>
-              <p className="mt-0.5 text-xs text-slate-300">
+              <p className="mt-0.5 text-xs text-rose-100/85">
                 Địa chỉ: Số 155 Lê Hồng Phong, Phường Tam Thắng, TP. Hồ Chí Minh
                 | ĐT: 0254.3859380
               </p>
             </div>
             <Link
               href="/category/lien-he"
-              className="shrink-0 rounded-full bg-[#1cd0b4] px-5 py-2.5 text-xs font-bold text-[#0c2340] transition hover:bg-white"
+              className="shrink-0 rounded-full bg-amber-300 px-5 py-2.5 text-xs font-extrabold text-[#580811] transition hover:bg-white"
             >
               Xem trang Liên hệ →
             </Link>

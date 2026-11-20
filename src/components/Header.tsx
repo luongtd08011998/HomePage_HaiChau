@@ -235,7 +235,7 @@ function NavLabelText({
   forLogo?: boolean;
 }) {
   const base =
-    "uppercase text-transparent bg-clip-text bg-gradient-to-r from-white via-sky-100 to-cyan-100 tracking-tight drop-shadow-[0_2px_10px_rgba(0,0,0,0.25)] transition-[background-image,filter,opacity]";
+    "uppercase text-transparent bg-clip-text bg-gradient-to-r from-white via-rose-50 to-amber-100 tracking-tight drop-shadow-[0_2px_10px_rgba(0,0,0,0.25)] transition-[background-image,filter,opacity]";
   if (forLogo) {
     return (
       <span
@@ -281,14 +281,14 @@ function AnimatedLogoMark() {
   );
 }
 
-/** Nền nav sticky màu xanh navy #0c2440 đồng bộ với Footer và thiết kế Lacroix. */
+/** Nền nav sticky màu Đỏ Ruby đồng bộ với Footer. */
 function HeaderBackdrop() {
   return (
     <div
       aria-hidden
       className="absolute inset-0 overflow-hidden pointer-events-none"
     >
-      <div className="absolute inset-0 bg-[#0c2440]" />
+      <div className="absolute inset-0 bg-gradient-to-r from-[#9b111e] via-[#7c0d18] to-[#580811]" />
       <div className="absolute inset-0 opacity-[0.05] [background-image:linear-gradient(to_right,rgba(255,255,255,0.2)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.12)_1px,transparent_1px)] [background-size:40px_40px]" />
     </div>
   );
@@ -520,7 +520,7 @@ export default function Header({ categoryTree }: HeaderProps) {
     return s.includes("gioi-thieu") || s.includes("gioithieu");
   }
 
-  const navShadow = "shadow-[0_14px_34px_-18px_rgba(2,132,199,0.55)]";
+  const navShadow = "shadow-[0_14px_34px_-18px_rgba(124,13,24,0.55)]";
 
   return (
     <>
@@ -731,7 +731,7 @@ export default function Header({ categoryTree }: HeaderProps) {
                 <IconHome className={navIconClass} />
                 <NavLabelText>Trang chủ</NavLabelText>
                 {pathname === "/" && (
-                  <span className="absolute bottom-1 left-2.5 right-2.5 h-0.5 rounded-full bg-[#1cd0b4] shadow-[0_0_12px_rgba(28,208,180,0.9)] sm:left-3 sm:right-3" />
+                  <span className="absolute bottom-1 left-2.5 right-2.5 h-0.5 rounded-full bg-amber-300 shadow-[0_0_12px_rgba(252,211,77,0.9)] sm:left-3 sm:right-3" />
                 )}
               </Link>
 
@@ -765,7 +765,7 @@ export default function Header({ categoryTree }: HeaderProps) {
                     >
                       <NavLabelText>{root.name}</NavLabelText>
                       {active && (
-                        <span className="absolute bottom-1 left-2.5 right-2.5 h-0.5 rounded-full bg-[#1cd0b4] shadow-[0_0_12px_rgba(28,208,180,0.9)] sm:left-3 sm:right-3" />
+                        <span className="absolute bottom-1 left-2.5 right-2.5 h-0.5 rounded-full bg-amber-300 shadow-[0_0_12px_rgba(252,211,77,0.9)] sm:left-3 sm:right-3" />
                       )}
                     </Link>
                   );
@@ -783,7 +783,7 @@ export default function Header({ categoryTree }: HeaderProps) {
                     >
                       <NavLabelText>{root.name}</NavLabelText>
                       <svg
-                        className={`h-3.5 w-3.5 shrink-0 text-white/90 transition-all ${navMenuTransition} group-hover/nav-item:text-[#1cd0b4] group-hover:rotate-180`}
+                        className={`h-3.5 w-3.5 shrink-0 text-white/90 transition-all ${navMenuTransition} group-hover/nav-item:text-amber-300 group-hover:rotate-180`}
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"
@@ -796,7 +796,7 @@ export default function Header({ categoryTree }: HeaderProps) {
                         />
                       </svg>
                       {rootActive && (
-                        <span className="absolute bottom-1 left-2.5 right-2.5 h-0.5 rounded-full bg-[#1cd0b4] shadow-[0_0_12px_rgba(28,208,180,0.9)] sm:left-3 sm:right-3" />
+                        <span className="absolute bottom-1 left-2.5 right-2.5 h-0.5 rounded-full bg-amber-300 shadow-[0_0_12px_rgba(252,211,77,0.9)] sm:left-3 sm:right-3" />
                       )}
                     </Link>
 

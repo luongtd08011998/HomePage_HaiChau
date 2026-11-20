@@ -37,15 +37,15 @@ const rowClass =
   "group/homeart relative block rounded-xl px-2.5 py-2 transition-[transform,background-color] duration-200 ease-out hover:-translate-y-0.5 hover:bg-[#ebf4f6]";
 
 const headerStyles = {
-  featured: "bg-[#0c2340] text-white",
-  mostViewed: "bg-[#0c2340] text-white",
-  maintenance: "bg-[#0c2340] text-white",
+  featured: "bg-gradient-to-r from-[#9b111e] via-[#7c0d18] to-[#580811] text-white",
+  mostViewed: "bg-gradient-to-r from-[#9b111e] via-[#7c0d18] to-[#580811] text-white",
+  maintenance: "bg-gradient-to-r from-[#9b111e] via-[#7c0d18] to-[#580811] text-white",
 } as const;
 
 const accentIcon = {
-  featured: "text-[#1cd0b4] group-hover/homeart:text-teal-600",
-  mostViewed: "text-[#1cd0b4] group-hover/homeart:text-teal-600",
-  maintenance: "text-[#1cd0b4] group-hover/homeart:text-teal-600",
+  featured: "text-[#9b111e] group-hover/homeart:text-[#7c0d18]",
+  mostViewed: "text-[#9b111e] group-hover/homeart:text-[#7c0d18]",
+  maintenance: "text-[#9b111e] group-hover/homeart:text-[#7c0d18]",
 } as const;
 
 export type HomeArticleSidebarMode = "featured" | "mostViewed" | "maintenance";
@@ -76,11 +76,11 @@ export default function HomeArticleSidebarSection({
         className={`flex shrink-0 items-center gap-2 px-4 py-3 text-sm font-bold text-white sm:px-5 sm:text-base ${headerStyles[mode]}`}
       >
         {mode === "featured" ? (
-          <IconStar className="h-4 w-4 shrink-0 text-[#1cd0b4]" />
+          <IconStar className="h-4 w-4 shrink-0 text-amber-300" />
         ) : mode === "maintenance" ? (
-          <IconCalendar className="h-4 w-4 shrink-0 text-[#1cd0b4]" />
+          <IconCalendar className="h-4 w-4 shrink-0 text-amber-300" />
         ) : (
-          <IconEye className="h-4 w-4 shrink-0 text-[#1cd0b4]" />
+          <IconEye className="h-4 w-4 shrink-0 text-amber-300" />
         )}
         <span className="tracking-tight">{title}</span>
       </div>

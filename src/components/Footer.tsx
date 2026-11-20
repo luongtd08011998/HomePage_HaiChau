@@ -119,7 +119,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="mt-auto bg-[#0c2440] text-white">
+    <footer className="mt-auto border-t border-rose-300/20 bg-gradient-to-br from-[#9b111e] via-[#7c0d18] to-[#580811] text-white">
       <div className="mx-auto max-w-7xl px-4 pt-8 sm:pt-12 lg:px-8 pb-[max(1.5rem,env(safe-area-inset-bottom,0px))] sm:pb-[max(2rem,env(safe-area-inset-bottom,0px))]">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-12 md:gap-8 lg:gap-12">
           {/* Cột 1: Thương hiệu & Giới thiệu đơn vị */}
@@ -128,7 +128,7 @@ export default function Footer() {
               href="/"
               className="group inline-flex items-center gap-3.5 text-left outline-none"
             >
-              <span className="relative h-12 w-12 shrink-0 overflow-hidden rounded-full bg-white/10 ring-2 ring-[#1cd0b4]/50 shadow-md transition-transform duration-300 group-hover:scale-105">
+              <span className="relative h-12 w-12 shrink-0 overflow-hidden rounded-full bg-white ring-2 ring-amber-300/70 shadow-md transition-transform duration-300 group-hover:scale-105">
                 <Image
                   src="/logocty1.jpg"
                   alt="Logo Công ty TNHH - Tập đoàn Hải Châu Việt Nam"
@@ -138,7 +138,7 @@ export default function Footer() {
                 />
               </span>
               <div className="flex flex-col">
-                <span className="text-[10px] font-semibold uppercase tracking-[0.2em] text-[#1cd0b4]">
+                <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-amber-300">
                   Công ty TNHH
                 </span>
                 <span className="text-base font-extrabold tracking-tight text-white sm:text-lg">
@@ -147,23 +147,23 @@ export default function Footer() {
               </div>
             </Link>
 
-            <p className="mt-3.5 max-w-md text-xs leading-relaxed text-white/75 sm:text-sm">
+            <p className="mt-3.5 max-w-md text-xs leading-relaxed text-rose-50/85 sm:text-sm">
               Đơn vị cung cấp nước sạch an toàn, ổn định và dịch vụ chăm sóc khách hàng trực tuyến nhanh chóng, minh bạch.
             </p>
 
-            <div className="mt-4 flex flex-wrap items-center gap-x-4 gap-y-1.5 text-xs text-white/80 sm:text-sm">
+            <div className="mt-4 flex flex-wrap items-center gap-x-4 gap-y-1.5 text-xs text-rose-50/90 sm:text-sm">
               <p className="flex items-center gap-1.5">
-                <span className="font-semibold text-white">MST:</span>
-                <span className="tabular-nums">3500122361</span>
+                <span className="font-semibold text-amber-200">MST:</span>
+                <span className="tabular-nums font-medium text-white">3500122361</span>
               </p>
-              <span className="text-white/25">•</span>
+              <span className="text-rose-200/40">•</span>
               <p className="flex items-center gap-1.5">
-                <span className="font-semibold text-white">Website:</span>
+                <span className="font-semibold text-amber-200">Website:</span>
                 <a
                   href="https://haichaugroup.vn"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="font-medium text-[#1cd0b4] transition-colors hover:text-white underline-offset-2 hover:underline"
+                  className="font-semibold text-amber-300 transition-colors hover:text-white underline-offset-2 hover:underline"
                 >
                   haichaugroup.vn
                 </a>
@@ -173,7 +173,7 @@ export default function Footer() {
 
           {/* Cột 2: Thông tin liên hệ */}
           <div className="md:col-span-7 lg:col-span-4">
-            <h4 className="mb-3 border-b border-white/15 pb-2 text-sm font-bold sm:mb-5 sm:pb-2.5 sm:text-base">
+            <h4 className="mb-3 border-b border-rose-200/20 pb-2 text-sm font-bold tracking-wide text-amber-200 uppercase sm:mb-5 sm:pb-2.5 sm:text-base">
               Thông tin liên hệ
             </h4>
             <div className="space-y-2.5 sm:space-y-3.5">
@@ -181,45 +181,45 @@ export default function Footer() {
                 href={MAP_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group flex items-start gap-2.5 text-xs text-white/90 transition-all duration-300 ease-out hover:text-[#1cd0b4] sm:text-sm"
+                className="group flex items-start gap-2.5 text-xs text-rose-50/95 transition-all duration-300 ease-out hover:text-amber-300 sm:text-sm"
               >
-                <IconMapPin className="mt-0.5 h-4 w-4 shrink-0 text-[#1cd0b4] transition-transform duration-300 group-hover:scale-110 sm:h-5 sm:w-5" />
+                <IconMapPin className="mt-0.5 h-4 w-4 shrink-0 text-amber-300 transition-transform duration-300 group-hover:scale-110 sm:h-5 sm:w-5" />
                 <span className="min-w-0 break-words text-pretty leading-relaxed">
                   {ADDRESS}
                 </span>
               </a>
-              <div className="flex items-start gap-2.5 text-xs text-white/90 sm:text-sm">
+              <div className="flex items-start gap-2.5 text-xs text-rose-50/95 sm:text-sm">
                 <IconPhone
-                  className="mt-0.5 h-4 w-4 shrink-0 text-[#1cd0b4] sm:h-5 sm:w-5"
+                  className="mt-0.5 h-4 w-4 shrink-0 text-amber-300 sm:h-5 sm:w-5"
                   aria-hidden
                 />
                 <div className="min-w-0 flex-1 leading-relaxed">
-                  <span className="text-white/70">Điện thoại:</span>{" "}
+                  <span className="text-rose-100/80">Điện thoại:</span>{" "}
                   <a
                     href="tel:02543859380"
-                    className="tabular-nums font-semibold text-white/90 transition-colors hover:text-[#1cd0b4]"
+                    className="tabular-nums font-semibold text-white transition-colors hover:text-amber-300"
                   >
                     0254.3859380
                   </a>
-                  <span className="text-white/50"> | </span>
-                  <span className="text-white/70">Fax:</span>{" "}
-                  <span className="tabular-nums font-semibold text-white/90">
+                  <span className="text-rose-200/50"> | </span>
+                  <span className="text-rose-100/80">Fax:</span>{" "}
+                  <span className="tabular-nums font-semibold text-white">
                     0254.3857106
                   </span>
                 </div>
               </div>
               <a
                 href="mailto:Eoffice@haichaugroup.vn"
-                className="group flex items-center gap-2.5 text-xs text-white/90 transition-all duration-300 ease-out hover:text-[#1cd0b4] sm:text-sm"
+                className="group flex items-center gap-2.5 text-xs text-rose-50/95 transition-all duration-300 ease-out hover:text-amber-300 sm:text-sm"
               >
-                <IconMail className="h-4 w-4 shrink-0 text-[#1cd0b4] transition-transform duration-300 group-hover:scale-110 sm:h-5 sm:w-5" />
+                <IconMail className="h-4 w-4 shrink-0 text-amber-300 transition-transform duration-300 group-hover:scale-110 sm:h-5 sm:w-5" />
                 <span className="min-w-0">Eoffice@haichaugroup.vn</span>
               </a>
 
               <div className="pt-1">
                 <a
                   href="tel:02543859380"
-                  className="inline-flex items-center gap-1.5 rounded-full bg-[#1cd0b4] px-4 py-1.5 text-xs font-bold text-[#0c2440] shadow-sm transition-all duration-300 ease-out hover:bg-white hover:text-[#0c2440] hover:scale-105 active:scale-95 sm:px-5 sm:py-2"
+                  className="inline-flex items-center gap-1.5 rounded-full bg-amber-300 px-4 py-1.5 text-xs font-extrabold text-[#580811] shadow-sm transition-all duration-300 ease-out hover:bg-white hover:text-[#7c0d18] hover:scale-105 active:scale-95 sm:px-5 sm:py-2"
                 >
                   <svg
                     className="h-3.5 w-3.5 -rotate-45"
@@ -242,7 +242,7 @@ export default function Footer() {
 
           {/* Cột 3: Liên kết nhanh */}
           <div className="md:col-span-5 lg:col-span-3">
-            <h4 className="mb-3 border-b border-white/15 pb-2 text-sm font-bold sm:mb-5 sm:pb-2.5 sm:text-base">
+            <h4 className="mb-3 border-b border-rose-200/20 pb-2 text-sm font-bold tracking-wide text-amber-200 uppercase sm:mb-5 sm:pb-2.5 sm:text-base">
               Liên kết nhanh
             </h4>
             <div className="grid grid-cols-2 gap-x-3 gap-y-2 sm:grid-cols-1 sm:gap-y-2.5">
@@ -250,9 +250,9 @@ export default function Footer() {
                 <Link
                   key={item.href}
                   href={item.href}
-                  className="group inline-flex items-center gap-1.5 py-0.5 text-left text-xs text-white/90 transition-all duration-300 ease-out hover:text-[#1cd0b4] sm:py-1 sm:text-sm sm:hover:translate-x-1.5"
+                  className="group inline-flex items-center gap-1.5 py-0.5 text-left text-xs text-rose-50/95 transition-all duration-300 ease-out hover:text-amber-300 sm:py-1 sm:text-sm sm:hover:translate-x-1.5"
                 >
-                  <IconChevronRight className="h-3.5 w-3.5 shrink-0 text-[#1cd0b4] transition-transform duration-300 group-hover:translate-x-1 group-hover:scale-110 sm:h-4 sm:w-4" />
+                  <IconChevronRight className="h-3.5 w-3.5 shrink-0 text-amber-300 transition-transform duration-300 group-hover:translate-x-1 group-hover:scale-110 sm:h-4 sm:w-4" />
                   <span className="leading-snug truncate">{item.label}</span>
                 </Link>
               ))}
@@ -261,7 +261,7 @@ export default function Footer() {
         </div>
 
         {/* Dòng bản quyền & nút cuộn lên đầu trang dưới chân trang */}
-        <div className="mt-8 flex flex-col items-center justify-between gap-3 border-t border-white/10 pt-5 text-center text-[11px] text-white/60 sm:mt-10 sm:flex-row sm:text-left sm:text-xs">
+        <div className="mt-8 flex flex-col items-center justify-between gap-3 border-t border-rose-200/20 pt-5 text-center text-[11px] text-rose-100/75 sm:mt-10 sm:flex-row sm:text-left sm:text-xs">
           <p>
             © {new Date().getFullYear()} CÔNG TY TNHH - TẬP ĐOÀN HẢI CHÂU VIỆT NAM. Tất cả quyền được bảo lưu.
           </p>
@@ -269,9 +269,9 @@ export default function Footer() {
             type="button"
             onClick={scrollToTop}
             title="Cuộn lên đầu trang"
-            className="group inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-3.5 py-1.5 text-xs font-semibold text-white/90 transition-all duration-300 hover:border-[#1cd0b4] hover:bg-white/10 hover:text-[#1cd0b4] active:scale-95 cursor-pointer"
+            className="group inline-flex items-center gap-2 rounded-full border border-rose-200/30 bg-white/10 px-3.5 py-1.5 text-xs font-semibold text-white transition-all duration-300 hover:border-amber-300 hover:bg-white/15 hover:text-amber-200 active:scale-95 cursor-pointer"
           >
-            <IconArrowUp className="h-3.5 w-3.5 text-[#1cd0b4] transition-transform duration-300 group-hover:-translate-y-0.5" />
+            <IconArrowUp className="h-3.5 w-3.5 text-amber-300 transition-transform duration-300 group-hover:-translate-y-0.5" />
             <span>Cuộn lên đầu trang</span>
           </button>
         </div>

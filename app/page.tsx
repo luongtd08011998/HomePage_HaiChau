@@ -92,11 +92,11 @@ export default async function HomePage() {
         {/* MỚI NHẤT — đặt dưới TV show (giữ thứ tự) */}
         <section className="mt-8" aria-label="Bài viết mới nhất">
           <div className="relative overflow-hidden rounded-2xl border border-slate-200/80 bg-white shadow-sm">
-            <div className="relative flex items-center justify-between gap-3 bg-[#0c2340] px-4 py-3 text-white sm:px-5">
+            <div className="relative flex items-center justify-between gap-3 bg-gradient-to-r from-[#9b111e] via-[#7c0d18] to-[#580811] px-4 py-3 text-white sm:px-5">
               <span className="text-base font-bold tracking-tight text-white">Bài viết mới nhất</span>
               <Link
                 href="/news"
-                className="rounded-full bg-[#1cd0b4] px-4 py-1.5 text-xs font-bold text-[#0c2340] transition hover:bg-[#18bda4]"
+                className="rounded-full bg-amber-300 px-4 py-1.5 text-xs font-extrabold text-[#580811] transition hover:bg-white hover:text-[#7c0d18]"
               >
                 Xem tất cả →
               </Link>
